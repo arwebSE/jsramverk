@@ -1,0 +1,26 @@
+{
+  "name": "jsramverk",
+  "version": "1.0.0",
+  "description": "redovisning jsramverk kursen",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^1.19.1",
+    "sass": "^1.26.2",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "auro17",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arwebSE/jsramverk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arwebSE/jsramverk/issues"
+  },
+  "homepage": "https://github.com/arwebSE/jsramverk#readme"
+}
