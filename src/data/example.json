@@ -1,0 +1,29 @@
+[
+    {},
+    {
+        "data": [
+            {
+                "question":"sdasyn på nodejs backend ramverk och berätta vilket ramverk du valde och varför.",
+                "answer":"Jag valde expressjs som backend ramverk, då jag har stor tidigare erfarenhet med det ramverket och att det är det mest använda nodejs ramverket."
+            },
+
+            {
+                "question":"Berätta om din katalogstruktur och hur du organiserade din kod, hur tänkte du?",
+                "answer":"Jag skapade en katalog med routes, som liknar det som kommer från scaffoldingen med express. Varje route fil exporterar en router."
+            }
+        ]
+    },
+    {
+        "data": [
+            {
+                "question":"2sdasyn på nodejs backend ramverk och berätta vilket ramverk du valde och varför.",
+                "answer":"Jag valde expressjs som backend ramverk, då jag har stor tidigare erfarenhet med det ramverket och att det är det mest använda nodejs ramverket."
+            },
+
+            {
+                "question":"Berätta om din katalogstruktur och hur du organiserade din kod, hur tänkte du?",
+                "answer":"Jag skapade en katalog med routes, som liknar det som kommer från scaffoldingen med express. Varje route fil exporterar en router."
+            }
+        ]
+    }
+]

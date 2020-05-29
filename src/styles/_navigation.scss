@@ -1,0 +1,24 @@
+#nav {
+    text-align: center;
+    li {
+        display: inline;
+        margin: 0 1em;
+        a {
+            font-weight: bold;
+            font-size: 1.4em;
+            color: $blackest;
+
+            &.router-link-exact-active {
+                color: $accent;
+                border-bottom: dotted 4px;
+            }
+            &:hover {
+                color: lighten($accent, 12);
+                background-color: inherit;
+            }
+        }
+        .dropdown .router-link-exact-active {
+            border: 4px dotted;
+        }
+    }
+}

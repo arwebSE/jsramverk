@@ -1,34 +1,20 @@
 <template>
-    <nav>
+    <nav id="nav">
         <ul>
-            <li><router-link to="/">Me</router-link></li>
-            <li><router-link to="/report/kmom01">kmom01</router-link></li>
+            <li><router-link to="/">Hem</router-link></li>
+            <li><NavDropdown /></li>
+            <li><router-link to="/about">Om</router-link></li>
         </ul>
     </nav>
 </template>
 
 <script>
+import NavDropdown from "./NavDropdown.vue";
 export default {
-    name: "Me",
-    props: {}
+    name: "Nav",
+    props: {},
+    components: {
+        NavDropdown
+    }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-ul {
-    list-style-type: none;
-}
-li {
-    display: inline;
-    margin-right: 1em;
-}
-li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.4em;
-}
-li a:hover {
-    text-decoration: underline;
-}
-</style>

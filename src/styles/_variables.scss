@@ -1,0 +1,16 @@
+$accent: #5887ac;
+$dark: #777;
+$darker: #333;
+$blackest: transparentize(#000, 0.2);
+$blacker: transparentize($blackest, 0.5);
+$black: transparentize($blacker, 0.2);
+$gray: transparentize(#fff, 0.7);
+
+$bgcolor: #6587a7;
+
+$font-alt: "Lato", Helvetica, Arial, sans-serif;
+$font-body: "Barlow", sans-serif;
+$font-header: "Avenir", Helvetica, Arial, sans-serif;
+
+$text-emboss: 2px 6px 6px $black, 0px -5px 35px $gray;
+$box-apple: 0px 0px 15px 0px $blacker;

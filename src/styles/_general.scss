@@ -1,0 +1,29 @@
+.centered {
+    text-align: center !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    background-color: $bgcolor;
+}
+
+.app {
+    width: 62em;
+    margin: 1em auto;
+    padding: 2em 6em 8em;
+    background-color: #efefef;
+    color: $darker;
+    border: 1px solid rgba(119, 119, 119, 1);
+    border-radius: 5px;
+    box-shadow: $box-apple;
+
+    h1 {
+        text-align: center;
+    }
+}

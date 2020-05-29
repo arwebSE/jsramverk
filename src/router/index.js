@@ -19,7 +19,7 @@ export default new Router({
             component: About
         },
         {
-            path: "/reports/:kmom",
+            path: "/reports/week/:kmom",
             name: "Reports",
             component: Reports
         }

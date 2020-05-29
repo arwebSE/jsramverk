@@ -1,7 +1,7 @@
 <template>
     <main>
         <Nav />
-        <h1>Home</h1>
+        <h1>Om</h1>
         <p>{{ text }}</p>
     </main>
 </template>
@@ -9,34 +9,17 @@
 <script>
 import Nav from "./Nav.vue";
 export default {
-    name: "Home",
+    name: "About",
     props: {},
     components: {
         Nav
     },
     data() {
         return {
-            text: ""
-        };
-    },
-    mounted() {
-        this.getMe();
-    },
-    methods: {
-        getMe() {
-            let that = this;
-            /* fetch("https://me-api.jsramverk.se")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(result) {
-                    that.text = result.description;
-                }); */
-            that.text = `This webpage is a part of the course
+            text: `This webpage is a part of the course
             <a href="https://jsramverk.se">jsramverk</a> provided by Blekinge
-            Tekniska Högskola.`;
-            that.image = `<img alt="ARWeb logo" src="../assets/logo.png" width="300" />`;
-        }
+            Tekniska Högskola.`
+        };
     }
 };
 </script>

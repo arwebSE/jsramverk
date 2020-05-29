@@ -1,7 +1,7 @@
 <template>
     <main>
         <Nav />
-        <h2>{{ $route.params.kmom }}</h2>
+        <h1>Kmom{{ $route.params.kmom }}</h1>
         <div class="question" v-for="question in questions" :key="question.key">
             <p>
                 <strong>{{ question.question }}</strong>
@@ -13,6 +13,7 @@
 
 <script>
 import Nav from "./Nav.vue";
+import exampleData from "../data/example.json";
 export default {
     name: "Report",
     components: {
@@ -30,7 +31,7 @@ export default {
         getText(kmom) {
             let that = this;
             that.text = "";
-            fetch("https://me-api.jsramverk.se/reports/" + kmom)
+            /*             fetch("https://me-api.jsramverk.se/reports//" + kmom)
                 .then(function(response) {
                     return response.json();
                 })
@@ -42,7 +43,15 @@ export default {
                             answer: question.answer
                         };
                     });
-                });
+                }); */
+            var result = exampleData[kmom];
+            that.questions = result.data.map((question, index) => {
+                return {
+                    key: index,
+                    question: question.question,
+                    answer: question.answer
+                };
+            });
         }
     }
 };
