@@ -1,7 +1,7 @@
 <template>
     <main>
         <Nav />
-        <h1>Kmom0{{ $route.params.kmom }}</h1>
+        <h1>Kmom01</h1>
         <h3>Github Readme</h3>
         <pre>{{ data }}</pre>
     </main>
@@ -20,7 +20,12 @@ export default {
         };
     },
     mounted() {
-        this.data = "hehj!";
+
+            fetch(
+                "https://raw.githubusercontent.com/arwebSE/jsramverk/master/README.md"
+            )
+            .then(response => response.text())
+            .then(response => (this.data = response));
     }
 };
 </script>
