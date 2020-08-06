@@ -20,10 +20,9 @@ export default {
         };
     },
     mounted() {
-
-            fetch(
-                "https://raw.githubusercontent.com/arwebSE/jsramverk/master/README.md"
-            )
+        fetch(
+            "https://raw.githubusercontent.com/arwebSE/jsramverk/master/README.md"
+        )
             .then(response => response.text())
             .then(response => (this.data = response));
     }
