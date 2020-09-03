@@ -11,6 +11,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2",
     "vue": "^2.6.11",
     "vue-clickaway": "^2.2.2",
     "vue-router": "^3.2.0"
@@ -29,10 +30,16 @@
     "prettier": "^1.19.1",
     "vue-template-compiler": "^2.6.11"
   },
-  "jshintConfig": { "esversion": 6 },
-  "prettier": { "tabWidth": 4 },
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "prettier": {
+    "tabWidth": 4
+  },
   "homepage": "https://github.com/arwebSE/jsramverk#readme",
-  "bugs": { "url": "https://github.com/arwebSE/jsramverk/issues" },
+  "bugs": {
+    "url": "https://github.com/arwebSE/jsramverk/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arwebSE/jsramverk.git"
