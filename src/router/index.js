@@ -3,7 +3,8 @@ import Router from "vue-router";
 import Index from "@/components/Index";
 import About from "@/components/About";
 import Reports from "@/components/Reports";
-import Kmom01 from "@/components/Kmom01";
+import Login from "@/components/Login";
+import Register from "@/components/Register";
 
 Vue.use(Router);
 
@@ -20,14 +21,19 @@ export default new Router({
             component: About
         },
         {
-            path: "/reports/week/1",
-            name: "Kmom01",
-            component: Kmom01
-        },
-        {
             path: "/reports/week/:kmom",
             name: "Reports",
             component: Reports
+        },
+        {
+            path: "/login",
+            name: "Login",
+            component: Login
+        },
+        {
+            path: "/register",
+            name: "Register",
+            component: Register
         }
     ]
 });

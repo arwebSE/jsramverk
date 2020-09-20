@@ -27,3 +27,12 @@ html {
         text-align: center;
     }
 }
+
+.is-primary {
+    background-color: $bgcolor !important;
+}
+
+.rounded {
+    border: 1px solid rgba(201, 201, 201, 0.2) !important;
+    border-radius: 5px !important;
+}
