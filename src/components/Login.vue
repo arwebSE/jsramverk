@@ -13,25 +13,39 @@
         <section class="section">
             <div class="container">
                 <div class="field">
-                    <label class="label is-large" for="email">Email:</label>
+                    <label class="label is-large" for="username"
+                        >Username:</label
+                    >
                     <div class="control">
-                        <input type="email" class="input is-large" id="email" v-model="email">
+                        <input
+                            type="username"
+                            class="input is-large"
+                            id="username"
+                            v-model="username"
+                        />
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label is-large" for="password">Password:</label>
+                    <label class="label is-large" for="password"
+                        >Password:</label
+                    >
                     <div class="control">
-                        <input type="password" class="input is-large" id="password" v-model="password">
+                        <input
+                            type="password"
+                            class="input is-large"
+                            id="password"
+                            v-model="password"
+                        />
                     </div>
                 </div>
 
                 <div class="control">
-                    <a class="button is-large is-primary" @click="authenticate">Login</a>
+                    <a class="button is-large is-primary" @click="authenticate"
+                        >Login</a
+                    >
                 </div>
-
             </div>
         </section>
-
     </main>
 </template>
 

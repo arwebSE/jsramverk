@@ -3,7 +3,9 @@
         <Nav />
         <h1>Kmom0{{ $route.params.kmom }}</h1>
         <div class="question" v-for="question in questions" :key="question.key">
-            <p><strong>{{ question.question }}</strong></p>
+            <p>
+                <strong>{{ question.question }}</strong>
+            </p>
             <p>{{ question.answer }}</p>
         </div>
     </main>
@@ -29,10 +31,10 @@ export default {
             let that = this;
             that.text = "";
             fetch("http://localhost:1337/reports/week/" + kmom)
-            .then(function(response) {
+                .then(function(response) {
                     return response.json();
-            })
-            .then(function(result) {
+                })
+                .then(function(result) {
                     that.questions = result.data.map((question, index) => {
                         return {
                             key: index,
@@ -40,9 +42,8 @@ export default {
                             answer: question.answer
                         };
                     });
-            });
+                });
         }
     }
 };
-
 </script>
