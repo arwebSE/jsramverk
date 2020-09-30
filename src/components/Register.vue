@@ -5,7 +5,7 @@
         <section class="hero is-primary rounded">
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <h1 class="title">Register</h1>
+                    <h3>Register</h3>
                     <ul
                         class="subtitle error-msg"
                         v-if="errors && errors.length"
@@ -65,10 +65,8 @@
 <script>
 const apiUrl = "http://localhost:1337";
 let apiEndPoint = apiUrl + "/register";
-
 import Nav from "./Nav.vue";
-/* import axios from 'axios';
- */
+
 export default {
     name: "Login",
     props: {},

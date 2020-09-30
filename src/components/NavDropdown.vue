@@ -17,6 +17,9 @@
         </div>
         <div class="dropdown-menu" id="dropdown-menu" role="menu">
             <div class="dropdown-content">
+                <router-link to="/reports/" class="dropdown-item">
+                    <span>Redigera</span>
+                </router-link>
                 <router-link to="/reports/week/1" class="dropdown-item">
                     <span>Kmom01</span>
                 </router-link>
